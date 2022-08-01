@@ -1,4 +1,4 @@
-require'lspconfig'.pyright.setup{}
+--[[require'lspconfig'.pyright.setup{}
 
 local opts = {noremap=true, silent=true}
 vim.keymap.set('n' ,'<Leader>e', vim.diagnostic.open_float, opts)
@@ -38,4 +38,4 @@ require('lspconfig')['pyright'].setup{
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
-}
+}]]

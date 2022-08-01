@@ -1,6 +1,7 @@
 require("samme.set")
-require("samme.packer")
 require("samme.treeexplorer")
 require("samme.lsp")
 require("samme.keymaps")
+require("samme.packer")
+require("samme.completion.complete")
 --require("samme.terminal")

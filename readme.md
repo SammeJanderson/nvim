@@ -1,3 +1,8 @@
+# About
+Minimun configuration of the init.lua (plus one theme)
+
+# how to use
+
 1. Move the folder to $HOME/.config/nvim
 2. install packer https://github.com/wbthomason/packer.nvim
 3. open the file packer.lua , source the file(:so) then run the commmand :PackerSync

@@ -1,3 +1,3 @@
 local nnoremap = require("user.keymap").nnoremap
 
-nnoremap("<leader>pv", "<cmd>Ex<CR>")
+nnoremap("<leader>pv", "<cmd>Ex<CR>") -- open netrw

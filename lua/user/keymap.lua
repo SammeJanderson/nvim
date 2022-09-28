@@ -10,12 +10,15 @@ local function bind(op, outer_opts)
         vim.keymap.set(op, lhs, rhs, opts)
     end
 end
+
     
+M._map = bind('')
 M.nmap = bind("n", {noremap = false})
 M.nnoremap = bind("n")
 M.vnoremap = bind("v")
 M.xnoremap = bind("x")
 M.inoremap = bind("i")
+M.tnoremap = bind("t")
     
 return M
 

@@ -51,5 +51,26 @@ return require('packer').startup(function(use)
     'goolord/alpha-nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },
   }
+
+  -- icons
+  use 'kyazdani42/nvim-web-devicons'
+
+   -- ctags
+  use 'preservim/tagbar'
+
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+
+   -- git labels
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      require('gitsigns').setup{}
+    end
+  }
+
 end)
 

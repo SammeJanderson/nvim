@@ -1,2 +1,5 @@
 require("user.set")
 require("user.remap")
+require("user.statusline")
+require("user.packer")
+require("user.autocmds")

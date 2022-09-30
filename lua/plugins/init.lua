@@ -1,6 +1,0 @@
-require("plugins.alpha-nvim")
-require("plugins.nvim-cmp")
-require("plugins.nvim_lspconfig")
-require("plugins.nvim_tree")
-require("plugins.nvim_treesitter")
-require("plugins.packer")

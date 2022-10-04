@@ -192,6 +192,7 @@ _G.packer_plugins = {
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/Users/sammerodrigues/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+
     url = "https://github.com/folke/tokyonight.nvim"
   }
 }

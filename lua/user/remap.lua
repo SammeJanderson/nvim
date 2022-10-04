@@ -29,3 +29,8 @@ tnoremap('<Esc>', '<C-\\><C-n>')                    -- exit
 -- Telescope
 nnoremap("<C-f>" , "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<CR>")
 --nnoremap("<C-f>" , "<cmd>Telescope live_grep<CR>")
+
+-- cycle buffers
+nnoremap("L", ":BufferLineCycleNext<CR>")
+nnoremap("H", ":BufferLineCyclePrev<CR>")
+

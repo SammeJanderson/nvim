@@ -46,6 +46,7 @@ return packer.startup(function(use)
     use "nvim-lua/plenary.nvim"   -- Useful lua functions used by lots of plugins
     use "folke/tokyonight.nvim"
     use "windwp/nvim-autopairs"
+    use "nvim-lualine/lualine.nvim"
 
     -- CMP
     use "hrsh7th/nvim-cmp"

@@ -14,7 +14,7 @@ nnoremap("<C-h>", "<C-w>h")
 nnoremap("<C-j>", "<C-w>j")
 nnoremap("<C-k>", "<C-w>k")
 nnoremap("<C-l>", "<C-w>l")
-nnoremap("<C-n>", ":Lexplore 10<CR>")
+nnoremap("<C-n>", ":NvimTreeToggle<CR>")
 
 -- Resize window with arrow keys
 --[[nnoremap("<C-Up>", ":resize -2<CR>")  

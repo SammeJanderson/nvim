@@ -40,31 +40,41 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  use "wbthomason/packer.nvim"  -- Have packer manage itself
-  use "nvim-lua/popup.nvim"     -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim"   -- Useful lua functions used by lots of plugins
-  use "folke/tokyonight.nvim"
+    use "wbthomason/packer.nvim"  -- Have packer manage itself
+    use "nvim-lua/popup.nvim"     -- An implementation of the Popup API from vim in Neovim
+    use "nvim-lua/plenary.nvim"   -- Useful lua functions used by lots of plugins
+    use "folke/tokyonight.nvim"
 
-  -- CMP
-  use "hrsh7th/nvim-cmp"
-  use "hrsh7th/cmp-buffer"
-  use "hrsh7th/cmp-path"
-  use "hrsh7th/cmp-cmdline"
-  use "saadparwaiz1/cmp_luasnip"
-  use "hrsh7th/cmp-nvim-lsp"
+    -- CMP
+    use "hrsh7th/nvim-cmp"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-cmdline"
+    use "saadparwaiz1/cmp_luasnip"
+    use "hrsh7th/cmp-nvim-lsp"
 
 
-  -- Snippets
-  use "L3MON4D3/LuaSnip"
-  use "rafamadriz/friendly-snippets"
+    -- Snippets
+    use "L3MON4D3/LuaSnip"
+    use "rafamadriz/friendly-snippets"
 
-  -- LSP
-  use "neovim/nvim-lspconfig"
-  use "williamboman/nvim-lsp-installer"
+    -- LSP
+    use "neovim/nvim-lspconfig"
+    use "williamboman/nvim-lsp-installer"
 
-  --  Telescope
-  use "nvim-telescope/telescope.nvim"
-  use 'nvim-telescope/telescope-media-files.nvim'
+    --  Telescope
+    use "nvim-telescope/telescope.nvim"
+    use 'nvim-telescope/telescope-media-files.nvim'
+
+    -- treesitter
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate"
+    }
+
+    use "p00f/nvim-ts-rainbow"
+
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

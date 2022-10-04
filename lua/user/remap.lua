@@ -22,10 +22,6 @@ nnoremap("<C-Down>", ":resize +2<CR>")
 nnoremap("<C-Left>", ":vertical resize -2<CR>")  
 nnoremap("<C-Right>", ":vetical resize +3<CR>")  ]]--
 
--- Terminal mappings
-nnoremap('<leader>t', ':Term<CR>', { noremap = true })  -- open
-tnoremap('<Esc>', '<C-\\><C-n>')                    -- exit
-
 -- Telescope
 nnoremap("<C-f>" , "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<CR>")
 --nnoremap("<C-f>" , "<cmd>Telescope live_grep<CR>")

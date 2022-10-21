@@ -32,3 +32,4 @@ nnoremap("H", ":BufferLineCyclePrev<CR>")
 
 -- save with CTRL+S
 nnoremap("<C-s>", ":w<CR>")
+nnoremap("<C-t>", ":lua _LAZYGIT_TOGGLE()<CR>")

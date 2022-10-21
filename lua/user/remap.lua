@@ -7,7 +7,7 @@ nnoremap("<leader>p", "nohl<CR>")        -- clear search highlighting
 nnoremap("<leader>r", ":so %<CR>")       -- reload config
 nnoremap("<leader>s", ":w<CR>")          -- fast save file
 nnoremap("<leader>pv", "<cmd>Ex<CR>")    -- open netw
-nnoremap("<C-q>", ":wqa<CR>")        -- cloase all windows ( saving )
+nnoremap("<C-q>", ":wqa!<CR>")        -- cloase all windows ( saving )
 
 -- Better Window Navigation
 nnoremap("<C-h>", "<C-w>h")
@@ -30,3 +30,5 @@ nnoremap("<C-f>" , "<cmd>lua require'telescope.builtin'.find_files(require('tele
 nnoremap("L", ":BufferLineCycleNext<CR>")
 nnoremap("H", ":BufferLineCyclePrev<CR>")
 
+-- save with CTRL+S
+nnoremap("<C-s>", ":w<CR>")

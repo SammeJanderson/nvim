@@ -3,10 +3,10 @@ if not status_ok then
   return
 end
 
-telescope.load_extension('media_files')
 
 local actions = require "telescope.actions"
 
+telescope.load_extension('media_files')
 telescope.setup {
   defaults = {
 
@@ -80,13 +80,10 @@ telescope.setup {
     },
   },
   pickers = {
-    -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...
-    -- }
-    -- Now the picker_config_key will be applied every time you call this
-    -- builtin picker
+      --[[  lsp_dynamic_workspace_symbols = {
+
+            sorter = telescope.extensions.native_fzf_sorter(fzf_opts)
+        }, ]]--
   },
   extensions = {
     media_files = {

@@ -75,4 +75,9 @@ return packer.startup(function(use)
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     }
+
+    use {'MunifTanjim/eslint.nvim'}
+
+    use {"lewis6991/gitsigns.nvim"}
+
 end)

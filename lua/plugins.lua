@@ -81,7 +81,7 @@ return packer.startup(function(use)
     use {"lewis6991/gitsigns.nvim"}
 
     use {"mfussenegger/nvim-jdtls"}
-     
+
     use {"HiPhish/nvim-ts-rainbow2"}
 
 end)

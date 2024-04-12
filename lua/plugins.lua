@@ -84,4 +84,12 @@ return packer.startup(function(use)
 
     use {"HiPhish/nvim-ts-rainbow2"}
 
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
+    }
+
 end)

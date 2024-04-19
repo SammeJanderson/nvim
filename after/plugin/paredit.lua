@@ -16,15 +16,15 @@ paredit.setup({
         -- an S-expression representing a function call to add with arguments 2 and 3.]]
         ["<localleader>@"] = { paredit.unwrap.unwrap_form_under_cursor, "Splice sexp" },
 
-        --SLURPING
-        --[[Slurp: Slurping is the action of moving an outer parenthesis to include one more item. For example,
-        --if you have (foo |bar baz) and you slurp in the closing parenthesis, it becomes (foo (bar baz)|).]]
+        -- SLURPING
+        -- [[Slurp: Slurping is the action of moving an outer parenthesis to include one more item. For example,
+        -- if you have (foo |bar baz) and you slurp in the closing parenthesis, it becomes (foo (bar baz)|).]]
         [">)"] = { paredit.api.slurp_forwards, "Slurp forwards" },
         ["<("] = { paredit.api.slurp_backwards, "Slurp backwards" },
 
-        --BARFING
-        --Barf: Barfing is the opposite of slurping. It removes an item from within the parentheses and moves it outside. 
-        --For instance, if you have (foo (bar baz)|), barfing on (bar baz) would result in (foo| bar baz).
+        -- BARFING
+        -- Barf: Barfing is the opposite of slurping. It removes an item from within the parentheses and moves it outside. 
+        -- For instance, if you have (foo (bar baz)|), barfing on (bar baz) would result in (foo| bar baz).
         [">("] = { paredit.api.barf_backwards, "Barf backwards" },
         ["<)"] = { paredit.api.barf_forwards, "Barf forwards" },
 

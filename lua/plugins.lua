@@ -92,4 +92,6 @@ return packer.startup(function(use)
         end
     }
 
+    use "julienvincent/nvim-paredit"
+
 end)

@@ -43,6 +43,9 @@ return packer.startup(function(use)
 
     use "wbthomason/packer.nvim" -- Have packer manage itself
     use "folke/tokyonight.nvim"
+    use "catppuccin/nvim" 
+
+    use "rmagatti/auto-session"
 
     use {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',

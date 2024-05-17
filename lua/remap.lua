@@ -7,4 +7,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- paste without losing current copy
 vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set('t', '<C-n>', '<C-\\><C-n>')
 
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })

@@ -97,4 +97,11 @@ return packer.startup(function(use)
 
     use "julienvincent/nvim-paredit"
 
+    use({
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup()
+        end,
+    })
+
 end)

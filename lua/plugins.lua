@@ -42,8 +42,17 @@ return packer.startup(function(use)
     -- General
 
     use "wbthomason/packer.nvim" -- Have packer manage itself
-    use "folke/tokyonight.nvim"
     use "catppuccin/nvim" 
+    use "catppuccin/nvim"
+    use {
+        'rmagatti/auto-session',
+        config = function()
+            require("auto-session").setup {
+                log_level = "error",
+                auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+            }
+        end
+    }
 
     use "rmagatti/auto-session"
 

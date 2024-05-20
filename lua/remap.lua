@@ -10,3 +10,5 @@ vim.keymap.set("x", "<leader>p", "\"_dP")
 vim.keymap.set('t', '<C-n>', '<C-\\><C-n>')
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+vim.keymap.set('t', "<C-n>", "<C-\\><C-n>")
